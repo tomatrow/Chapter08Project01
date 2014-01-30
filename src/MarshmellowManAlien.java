@@ -2,7 +2,8 @@ class MarshmellowManAlien extends Alien {
 	MarshmellowManAlien() {
 		super("Marshmellow Man",1);
 	}
-	int damage() {
+	@Override
+	public int damage() {
 		return 1;
 	}
 }

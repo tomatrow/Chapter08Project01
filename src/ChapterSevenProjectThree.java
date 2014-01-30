@@ -1,4 +1,4 @@
-/* Chapter No. 7 - Project No.  3.
+/* Chapter No. 8 - Project No.  1.
     File Name:          ChapterSevenProjectThree.java
     Programmer:         Andrew Caldwell
     Date Last Modified: Nov. 26, 2013
@@ -24,11 +24,11 @@
 
 class ChapterSevenProjectThree {
 	public static void main(String[] args) {
-		AlienPack pack = new AlienPack();
-		pack.setAlienAtIndex(new SnakeAlien(),0);
-		pack.setAlienAtIndex(new OgreAlien(),1);
-		pack.setAlienAtIndex(new MarshmellowManAlien(),2);
-		System.out.println("Alien Collection: " + pack);
-		System.out.println("Their damage together: " + pack.calculateDamage());
+		AlienPack _pack = new AlienPack();
+		_pack.setAlienAtIndex(new SnakeAlien(),0);
+		_pack.setAlienAtIndex(new OgreAlien(),1);
+		_pack.setAlienAtIndex(new MarshmellowManAlien(),2);
+		System.out.println("Alien Collection: " + _pack);
+		System.out.println("Their damage together: " + _pack.calculateDamage());
 	}
 }

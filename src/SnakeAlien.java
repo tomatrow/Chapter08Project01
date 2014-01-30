@@ -2,7 +2,8 @@ class SnakeAlien extends Alien {
 	SnakeAlien() {
 		super("Snake",10);
 	}
-	int damage() {
+	@Override
+	public int damage() {
 		return 10;
 	}
 }

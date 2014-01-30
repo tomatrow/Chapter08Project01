@@ -32,10 +32,10 @@ abstract class Alien {
 	}
 
 	// getters
-	String name() {
+	public String name() {
 		return _name;
 	}
-	abstract int damage();
+	public abstract int damage();
 	int health() {
 		return _health;
 	}
