@@ -5,8 +5,6 @@ class AlienPack {
 	private Alien[] _aliens;
 	AlienPack() {
 		_aliens = new Alien[ALIEN_COUNT];
-		for (Alien alien : _aliens) 
-			alien = new Alien();
 	}
 	AlienPack(Alien[] aliens) {
 		setAliens(aliens);
@@ -18,14 +16,14 @@ class AlienPack {
 			damage += alien.damage();
 		return damage;
 	}
-	// getters 
+
 	Alien[] aliens() {
 		Alien[] aliens = new Alien[ALIEN_COUNT];
 		for (int x = 0;x < ALIEN_COUNT;x++) 
-			aliens[x] = _aliens[x].copy();
+			aliens[x] = (Alien) _aliens[x];
 		return aliens;
 	}
-	// setters 
+
 	void setAliens(Alien[] aliens) {
 		boolean validArray = true;
 		for (Alien alien : aliens) 

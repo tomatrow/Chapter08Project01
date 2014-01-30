@@ -19,14 +19,14 @@ abstract class Alien {
 	}
 
 	// setters
-	void setName(String name) {
+	private void setName(String name) {
 		_name = name;
 	}
-	void setDamage(int damage) {
+	private void setDamage(int damage) {
 		if (damage >= MIN_HEALTH) 
 			_damage = damage;
 	}
-	void setHealth(int health) {
+	private void setHealth(int health) {
 		if (health >= MIN_HEALTH && health <= MAX_HEALTH)
 			_health = health;
 	}
@@ -43,6 +43,4 @@ abstract class Alien {
 	public String toString() {
 		return String.format("%s:%d",name(),damage());
 	}
-
-
 }
