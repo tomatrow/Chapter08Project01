@@ -13,8 +13,6 @@
 
     Classes needed and Purpose
     main class - Chapter07Project06
-    System - streams
-    String - holding strings
     Alien - abstract base class
     AlienPack - Alien manager/collection
     OgreAlien -  subclass of alien 
